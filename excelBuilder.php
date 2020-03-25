@@ -18,9 +18,6 @@ $file_pref = $_POST['file_pref'];
 gc_collect_cycles();
 
 
-
-
-
 /*styles*/
 
 $headerStyle = [
