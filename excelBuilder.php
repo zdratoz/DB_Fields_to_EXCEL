@@ -1,13 +1,13 @@
 <?php
-/*                                         phpinfo.php?p=5&g=0 
-http://localhost/dev/Dropbox/BSP01/phpinfo.php?p=5&g=0
-*/
+
 session_start();
 require 'excelLibs/vendor/autoload.php';
 include_once($_SESSION["ROOT_PATH"] . '/config.php');
 include_once($_SESSION["ROOT_PATH"] . '/BSP/php/BspFunctions.php');
 
+use PhpOffice\PhpSpreadsheet\Spreadsheet;
 
+/*get post-method variables*/
 $sql =   $_POST['sql'];
 $table = $_POST['myHeaderInfo'];
 $headers = $_POST['headers'];
@@ -17,7 +17,7 @@ $limit = $_POST['limit'];
 $file_pref = $_POST['file_pref'];
 gc_collect_cycles();
 
-use PhpOffice\PhpSpreadsheet\Spreadsheet;
+
 
 
 
